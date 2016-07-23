@@ -75,12 +75,15 @@
       </div>
       <div>
         <label>Gender:</label>
-        <select>
-          <option value="m">
+        <select name="gender">
+          <option value="male">
             Male
           </option>
-          <option value="f">
+          <option value="female">
             Female
+          </option>
+          <option value="other">
+            Other
           </option>
         </select>
       </div>
@@ -92,11 +95,33 @@
         <label>Email:</label>
         <input type="email" name="email">
       </div>
+    </fieldset>
 
-    </fieldset>
     <fieldset name="surv-ques">
-      
+      <legend>
+        Survey Questions
+      </legend>
+      <div>
+        <label>Who is your favorite main character from IB?</label><br>
+        <input type="radio" name="fave-char" value="Aldo Raine"> Lt. Aldo Raine<br>
+        <input type="radio" name="fave-char" value="Hans Landa"> Col. Hans Landa<br>
+        <input type="radio" name="fave-char" value="Shoshanna Dreyfus"> Shoshanna Dreyfus
+      </div>
+      <div>
+        <label>Describe your favorite scene from IB.</label>
+        <textarea name="fave-scene"></textarea>
+      </div>
+      <div>
+        <label>What other Tarantino films have you seen?</label><br>
+        <input type="checkbox" name="qt-films-seen" value="Reservoir Dogs"> Reservoir Dogs<br>
+        <input type="checkbox" name="qt-films-seen" value="Pulp Fiction"> Pulp Fiction<br>
+        <input type="checkbox" name="qt-films-seen" value="Kill Bill"> Kill Bill<br>
+        <input type="checkbox" name="qt-films-seen" value="Django Unchained"> Django Unchained<br>
+        <input type="checkbox" name="qt-films-seen" value="Hateful Eight"> Hateful Eight
+      </div>
     </fieldset>
+
+    <button type="submit">Submit</button>
   </form>
 </body>
 </html>
